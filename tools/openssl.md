@@ -46,6 +46,12 @@ openssl req -newkey rsa:2048 -keyout <chave>.key -keyform PEM -SHA512 -out requi
 
 openssl pkcs12 -export -in cacert.pem -inkey cakey.pem -out identity.p12 -name "mykey"
 
+### Convert from PFX
+
+openssl pkcs12 -in myfile.pfx -nocerts -out private-key.pem -nodes
+openssl pkcs12 -in myfile.pfx -nokeys -out certificate.pem
+
+
 # PKCS #12
 https://tools.ietf.org/html/rfc7292
 
@@ -55,7 +61,7 @@ A simpler, alternative format to PKCS #12 is PEM which just lists the certificat
 
 Note -k option is to tell curl to accepted self-signed certificates.
 
-# troubloshoot
+# troubleshoot
 
 https://help.mulesoft.com/s/article/SSL-certificate-verification
 
