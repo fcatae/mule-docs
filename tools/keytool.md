@@ -5,7 +5,7 @@ Mule
 
 https://help.mulesoft.com/s/article/How-to-create-a-self-signed-Keystore-and-Trustore-SSL-Certificate
 
-keytool -v -genkeypair -keyalg RSA -dname "cn=MuleSoft, ou=MuleSoft, o=MuleSoft,L=San Francisco, st=CA, c=US" -ext SAN="DNS:localhost,IP:127.0.0.1" -validity 1825 -alias mykeyalias -keystore keystore.jks -keypass mule123 -storepass mule123
+keytool -v -genkeypair -keyalg RSA -dname "cn=MuleSoft, ou=MuleSoft, o=MuleSoft,L=San Francisco, st=CA, c=US" -ext SAN="DNS:localhost,IP:127.0.0.1" -validity 1825 -alias mule -keystore keystore.jks -keypass mule123 -storepass mule123
 
  
 2. Export the Certificate to add it into Truststore:  

@@ -98,3 +98,5 @@ https://www.keycdn.com/blog/openssl-tutorial
 https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs
 https://gist.github.com/Soarez/9688998
 
+command line
+https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs
